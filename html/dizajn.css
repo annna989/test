@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+  p {
+      color: green;
+      font-size: 50px;
+      text-align: center;
+  }
+  .center{
+    text-align: center;
+  }
