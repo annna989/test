@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px; 
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: royalblue; left: 0px; top:0px;
+            }
+
+            25% {
+                background-color: pink; left:0px; top:200px;
+            }
+
+            50% {
+                background-color: yellow; left:200px; top:200px;
+            }
+
+            75% {
+                background-color: black; left:200px; top:0px;
+            }
+
+            100% {
+                background-color: green; left:0px; top:0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is a div element</div>
+</body>
+
+</html>

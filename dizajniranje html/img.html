@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>foto</title>
+    <style>
+        img {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        div {
+            background-color: lightblue;
+            font: red;
+            width: 300px;
+            height: 70px;
+            white-space: nowrap;
+            overflow-x: scroll;
+            margin-left: auto;
+            margin-right: auto;
+            border:10px solid transparent;
+            position: relative;
+            border-radius: 25px;
+            border-image:url("images/image2.jpg") 30round;
+        }
+
+        div,
+        p {
+            color: brown;
+        }
+
+        p.hightlight:hover {
+            background-color: yellow;
+        }
+
+        input:focus {
+            background-color: aqua;
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        p::before {
+            content: url(image1.jpg);
+        }
+
+        p ::after {
+            content: url(image1.jpg);
+        }
+
+        a [target] {
+            background-color: red;
+        }
+        a[target="_blank"] {
+            background-color: lightcoral;
+        }
+        [title~="red"] {
+  border: 5px solid red;
+}
+    </style>
+</head>
+
+<body>
+    <h1>This is a heading</h1>
+    <p class="highlight">this is a pargraph</p>
+    <p class="hightlight">ffffffffffffddddddddddddddddddddddddddaaaaaaa</p>
+    <br>
+    <div class="conteiner"></div>
+    <div class="topleft">Top left</div>
+    <div>
+        <p>In my younger and more vulnerable years my father gave me some advice that
+            I've been turning over in my mind ever since.</p>
+    </div>
+    <form action="/action_page.php" method="GET">
+        First name:<input type="text" name="fname"><br>
+        Last name:<input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+        <p>This is a paragraph</p>
+        <p>Ovo je još jedan paragraf</p>
+    </form>
+    <p>
+    <img src="images/image2.jpg" width="150" height="113"></p>
+    <h2>
+        <a href="youtube.com">1 dio</a>
+        <br>
+        <a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">Drugi dio</a>
+        <br>
+        <a href="youtube.com" target="_blank">1 dio</a>
+        <br>
+        <a href="youtube.com">1 dio</a>
+        <img src="images/image1.jpg" title="red" width="107" height="100">
+        <img src="images/image2.jpg">
+    </h2>
+    <div>This is a div,some text</div>
+</body>
+
+</html>
