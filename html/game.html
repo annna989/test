@@ -88,6 +88,29 @@
             guessField.value = '';
             guessField.focus();
         }
+        guessSubmit.addEventListener ('click', checkGuess);
+        function setGameOver() {
+            guessField.disable = true;
+            guessSubmit.disable = true;
+            resetButton = document.createElement('button');
+            resetButton.textContent = 'Start new game';
+            document.body.appendChild(resetButton);
+            resetButton.addEventListener('click', resetButton);
+        }
+        function resetGame() {
+            guessCount =1;
+        const resetParas = document.querySelectorAll('.resultParas p');
+        for(let i=0 ; i < resetParas.length ; i++) {
+            resetParas[i].textContent = '';
+        }
+        resetButton.parentNode.removeChild(resetButton);
+        guessField.disable = false;
+        guessSubmit.disable = false;
+        guessField.value = '';
+        guessField.focus();
+        lastResult.style.backgroundColor = 'white';
+        randomNumber = Math.floor(Math.random() * 100) + 1;
+        }
     </script>
 </body>
 
